@@ -36,4 +36,7 @@ jQuery(document).ready(function($) {
       window.location.href = '#contact'
     })
   })
+
+  var num = Math.floor(Math.random() * 5) + 1
+  $('.page1').addClass('bg-switch' + num)
 })
