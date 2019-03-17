@@ -6,12 +6,12 @@
   box-sizing: border-box;
 }
 
-[class*='col-'] {
+[class*="col-"] {
   float: left;
   padding-right: 20px;
 }
 
-[class*='col-']:last-of-type {
+[class*="col-"]:last-of-type {
   padding-right: 0px;
 }
 
@@ -24,7 +24,7 @@
 }
 
 .grid:after {
-  content: '';
+  content: "";
   display: table;
   clear: both;
 }
@@ -33,7 +33,7 @@
   padding: 20px 0 0px 20px;
 }
 
-.grid-pad > [class*='col-']:last-of-type {
+.grid-pad > [class*="col-"]:last-of-type {
   padding-right: 20px;
 }
 
@@ -123,7 +123,7 @@
 body,
 input,
 textarea {
-  font-family: 'Open Sans', Helvetica, Arial, sans-serif;
+  font-family: "Open Sans", Helvetica, Arial, sans-serif;
   font-size: 13px;
 }
 
@@ -171,7 +171,7 @@ a:hover {
 #nav {
   margin: 0;
   width: 100%;
-  background: url('images/nav.png') 0 0 no-repeat;
+  background: url("images/nav.png") 0 0 no-repeat;
 }
 
 #nav,
@@ -219,7 +219,7 @@ a:hover {
 #nav:after,
 #nav ul:after {
   clear: both;
-  content: '.';
+  content: ".";
   display: block;
   height: 0;
   overflow: hidden;
@@ -336,7 +336,7 @@ a:hover {
 /* =Primary Main Menu IE Fixes
 -------------------------------------------------------------- */
 .ie7 #nav ul {
-  background: url('http://sassafrasnuts.com.au/wp-content/themes/sassafras/images/ie7-fix.gif')
+  background: url("http://sassafrasnuts.com.au/wp-content/themes/sassafras/images/ie7-fix.gif")
     repeat;
 }
 
@@ -355,7 +355,7 @@ a:hover {
   display: none;
   width: 30px;
   height: 30px;
-  background: url('images/select-icons.png') 3px 4px no-repeat;
+  background: url("images/select-icons.png") 3px 4px no-repeat;
   float: right;
   margin: 15px 10px 0 0;
   border: #bfbfbf 1px solid;
@@ -415,7 +415,7 @@ a:hover {
  * -------------------------------------------------------------- */
 
 .page1 {
-  background: url('images/landing.jpg') top center no-repeat;
+  background: url("images/landing.jpg") top center no-repeat;
   overflow: hidden;
   height: 789px;
   text-align: center;
@@ -423,16 +423,16 @@ a:hover {
 }
 
 .bg-switch1 {
-  background: url('images/landing.jpg') top center no-repeat;
+  background: url("images/landing.jpg") top center no-repeat;
 }
 .bg-switch2 {
-  background: url('images/landing1.jpg') top center no-repeat;
+  background: url("images/landing1.jpg") top center no-repeat;
 }
 .bg-switch3 {
-  background: url('images/landing2.jpg') top center no-repeat;
+  background: url("images/landing2.jpg") top center no-repeat;
 }
 .bg-switch4 {
-  background: url('images/landing3.jpg') top center no-repeat;
+  background: url("images/landing3.jpg") top center no-repeat;
 }
 
 .page1 .anchor {
@@ -443,7 +443,7 @@ a:hover {
 .black-trans {
   margin: 25% 0 3% 20%;
   padding: 0 20px;
-  background: url('images/black-trans.png') 0 0 repeat;
+  background: url("images/black-trans.png") 0 0 repeat;
   overflow: hidden;
   text-align: right;
   width: 70%;
@@ -454,7 +454,7 @@ a:hover {
   color: #fff;
   font-size: 3.8em;
   text-transform: uppercase;
-  font-family: 'Cabin Sketch', cursive;
+  font-family: "Cabin Sketch", cursive;
   font-weight: 700;
   margin-bottom: 0;
 }
@@ -501,7 +501,7 @@ a:hover {
  * -------------------------------------------------------------- */
 
 .page3 {
-  background: #fff url('images/about.jpg') top center no-repeat;
+  background: #fff url("images/about.jpg") top center no-repeat;
   padding: 264px 0 20px 0;
 }
 
@@ -572,7 +572,7 @@ a:hover {
 
 .page5 {
   padding: 230px 0 20px 0;
-  background: #fff url('images/faq-bg.jpg') top center no-repeat;
+  background: #fff url("images/faq-bg.jpg") top center no-repeat;
 }
 
 .page5 .anchor {
@@ -646,3 +646,25 @@ a:hover {
 }
 
 /* -------------------------------------------------------------- */
+
+.content {
+  overflow: hidden;
+  position: relative;
+}
+
+.facebook {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+}
+@media screen and (max-width: 800px) {
+  .facebook {
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    right: auto;
+  }
+  .footer .facebook {
+    display: none;
+  }
+}
